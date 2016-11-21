@@ -1,0 +1,927 @@
+@import 'reset.css';
+
+
+body{
+  font: normal 16px helvetica;
+  box-sizing: border-box;
+
+
+
+}
+
+header, footer{
+    width: 100%;
+   
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+100,7db9e8+100 */
+background: #1e5799; /* Old browsers */
+background: -moz-linear-gradient(left, #1e5799 0%, #2989d8 50%, #207cca 100%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #1e5799 0%,#2989d8 50%,#207cca 100%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #1e5799 0%,#2989d8 50%,#207cca 100%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
+
+}
+
+header .logo_container{
+  float: left;
+
+}
+
+header .header_top{
+
+  padding: 10px 15px 10px 15px;
+  /*background-color: #0F2C40;*/
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+
+
+}
+
+header .header_top:after{
+  clear: both;
+  display: block;
+  content: "";
+}
+
+
+header p{
+ font-family: "open sans";
+ font-size: 11px;
+ color: #f9f4f4;
+ margin-top: -5px;
+ letter-spacing: .5px;
+
+}
+
+header .search_box_container{
+  margin-top: 10px;
+  float: none;
+  margin-left: 10px;
+
+}
+
+header input[type="search"]{
+
+  font-size: 16px;
+  width: 300px;
+  height: 30px;
+  background-color: #E5E1E1;
+  border: 3px solid #2c539e;
+  color: #000;
+
+
+  
+}
+
+header input[type="search"]:focus{
+   background-color: #fff;
+   box-shadow: 3px rgba(32,124,202,0.44);
+   border: none; 
+ 
+}
+
+.search_box_container button{
+
+  position: relative;
+  vertical-align: middle;
+  border-style: none;
+  background-color: rgba(255, 255, 255, 0.0);
+  cursor: pointer;
+
+}
+
+header .log_in{
+
+
+  float: right;
+  position: relative;
+
+
+}
+
+
+header .log_in ul li{
+  display: inline-block;
+}
+
+header .log_in ul li a{
+  color: #fff;
+  outline-style: none;
+  font-size: 14px;
+  margin-right: 10px;
+  text-decoration: none;
+  font-family: "open sans";
+
+ 
+}
+
+header .log_in ul li a:focus, header .log_in ul li a:hover{
+ 
+  border-bottom-style: solid;
+  border-bottom-color: #ea5f51;
+
+}
+
+
+
+.header_top #dropdown_menu{
+  position: relative;
+  float: right;
+  display: none;
+
+}
+
+
+
+
+header nav{
+  padding: 20px 15px 0 10px;
+  /*background-color: #0F2C40;*/
+
+}
+
+
+
+header nav ul li{
+  display: inline-block;
+  padding: 10px;
+  font-family: "open sans";
+  /*background-color: #0F2C40;*/
+  border-top-left-radius: 7px;
+  border-top-right-radius: 25px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c539e+0,0f2c40+20,2c539e+70,2c539e+100 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2c539e+0,2c539e+70,2c539e+100 */
+background: #2c539e; /* Old browsers */
+background: -moz-linear-gradient(left,  #2c539e 0%, #2c539e 70%, #2c539e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #2c539e 0%,#2c539e 70%,#2c539e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #2c539e 0%,#2c539e 70%,#2c539e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c539e', endColorstr='#2c539e',GradientType=1 ); /* IE6-9 */
+position: relative;
+
+
+}
+
+header nav ul li .nav_image{
+  position: absolute;
+  visibility: hidden;
+
+}
+
+
+header nav ul li #icon_home{
+
+  left: 30%;
+  margin-top: -1px;
+
+
+}
+
+header nav ul li #icon_business{
+  
+  left: 30%;
+  margin-top: -3px;
+
+}
+
+header nav ul li #icon_crime
+
+{
+
+  left: 34%;
+  margin-top: -3px;
+
+}
+
+header nav ul li #icon_education{
+
+  left: 34%;
+  margin-top: -2px;
+}
+
+
+header nav ul li #icon_politics{
+
+  left: 30%;
+  margin-top: -1px;
+}
+
+
+header nav ul li #icon_sports{
+
+  left: 30%;
+  margin-top: 3px;
+
+}
+
+
+
+.selected{
+
+color: #2c539e;
+font-weight: bold;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+34,f3f3f3+34,ededed+95,ffffff+100 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+13,f3f3f3+32,f3f3f3+53,f3f3f3+53,ffffff+100 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+13,f3f3f3+32,f3f3f3+53,f3f3f3+53,ffffff+100 */
+background: #ededed; /* Old browsers */
+background: -moz-linear-gradient(left,  #ededed 13%, #f3f3f3 32%, #f3f3f3 53%, #f3f3f3 53%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #ededed 13%,#f3f3f3 32%,#f3f3f3 53%,#f3f3f3 53%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #ededed 13%,#f3f3f3 32%,#f3f3f3 53%,#f3f3f3 53%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+
+
+
+}
+
+
+header nav ul li span{
+  text-decoration: none;
+  color: #f9f4f4;
+
+
+}
+
+header nav ul li span:hover{
+
+  border-bottom: 2px solid #f9f4f4;
+}
+
+header nav ul li .selected:hover{
+
+
+  border-bottom: 2px solid #2c539e;
+}
+
+
+
+main{
+  /*min-width: 1200px;*/
+    width: 100%;
+   /* max-width: 1200px;*/
+    padding: 10px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+34,f3f3f3+34,ededed+95,ffffff+100 */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+13,f3f3f3+32,f3f3f3+53,f3f3f3+53,ffffff+100 */
+background: #ededed; /* Old browsers */
+background: -moz-linear-gradient(left,  #ededed 13%, #f3f3f3 32%, #f3f3f3 53%, #f3f3f3 53%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #ededed 13%,#f3f3f3 32%,#f3f3f3 53%,#f3f3f3 53%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #ededed 13%,#f3f3f3 32%,#f3f3f3 53%,#f3f3f3 53%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+
+
+}
+
+
+
+main article{
+  width: 31%;
+  border: 3px solid #2c539e; 
+  box-sizing: border-box;
+  float: left;
+  margin: 10px 10px;
+-webkit-box-shadow: 1px 4px 6px 2px rgba(32,124,202,0.44);
+-moz-box-shadow: 1px 4px 6px 2px rgba(32,124,202,0.44);
+box-shadow: 1px 4px 6px 2px rgba(32,124,202,0.44);
+}
+
+.breadcrumb {
+  font-weight: normal;
+  color: #000;
+  margin-left: 10px;
+}
+
+main h2{
+  font-family: "roboto";
+  font-size: 26px;
+  font-weight: lighter;
+  color: #000;
+  padding: 5px 0;
+ 
+  letter-spacing: 1px;
+  text-align: left;
+  font-weight: bold;
+
+}
+
+main h2:hover{
+  text-decoration: underline;
+}
+
+
+main button{
+  border-style: none;
+  background-color: inherit;
+  text-align: left;
+
+}
+
+
+
+main h2{
+  font-family: "roboto condensed";
+  font-size: 42px;
+
+}
+
+.latest .image_article{
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+
+main article p{
+  padding: 10px 0;
+
+
+}
+
+main article p, main article td{
+  color: #373d3f;
+  letter-spacing: .5px;
+  font-family: "open sans";
+  font-size: 14px;
+}
+
+main article td{
+  font-size: 10px;
+}
+
+
+main article td img{
+  vertical-align: middle;
+}
+
+
+main article p + p{
+  text-decoration: underline;
+  font-weight: bold;
+  margin-top: -10px;
+}
+
+
+
+main .trending .image_article{
+  width: 50%;
+  float: left;
+  padding-right: 5px;
+}
+
+main .trending p{
+font-size: 12px;
+}
+
+main .trending td{
+font-size: 7px;
+padding-right: 0;
+}
+
+
+.page_numbers{
+  clear: both;
+  display: block;
+  margin-left: 10px;
+}
+
+.page_number{
+
+  background-color: #2c539e;
+  padding: 5px;
+  display: inline-block;
+  
+}
+
+.page_number a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: "open sans";
+
+}
+
+
+.page_number a:hover{
+
+  border-bottom: 2px solid #f9f4f4;
+}
+
+
+
+.create_form{
+ 
+ 
+  margin: 0 auto;
+  width: 30%;
+  min-width: 350px;
+
+
+}
+
+.create_account fieldset{
+  margin-left: 10px;
+}
+
+.create_account {
+  border: 1px solid #cacaca;
+
+  box-sizing: border-box;
+  padding: 20px 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 100%;
+
+}
+
+main .create_account input
+{
+  display: block;
+  font-family: "open sans";
+  font-size: 16px;
+  color: #000;
+  width: 95%;
+
+
+ 
+}
+
+main .create_account legend{
+
+  font-size: 30px;
+  color: #2c539e;
+  font-family: "roboto condensed";
+  font-weight: lighter;
+  padding-bottom: 15px;
+
+}
+
+
+
+main .create_account p
+{
+  font-size: 12px;
+  font-family: "open sans";
+  color: #373d3f;
+  font-weight: lighter;
+  padding-bottom: 5px;
+  letter-spacing: .5px;
+ 
+  width: 90%;
+}
+
+
+.create_account input[type = "text"],
+.create_account input[type = "email"],
+.create_account input[type = "text"]{
+
+margin-bottom: 15px;
+padding: 0 5px;
+border-radius: 3px;
+height: 40px;
+border: 1px solid #ea5f51;
+box-sizing: border-box;
+
+
+
+}
+
+#eye{
+  position: relative;
+  top: -45px;
+  right: -280px;
+  display: none;
+}
+
+#eye:hover{
+  cursor: pointer;
+}
+
+.create_account_button p{
+ 
+  font-size: 10px;
+  font-family: "open sans";
+  color: #373d3f;
+  letter-spacing: .5px;
+  font-weight: lighter;
+  margin-top: 20px;
+  
+}
+
+main .create_account a{
+  color: #373d3f;
+}
+
+.create_account button, 
+.sign_in_account button{
+
+  font-size: 16px;
+  color: #fff;
+  height: 45px;
+  border-radius: 4px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #006dcc; 
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  margin-top: 10px;
+
+}
+
+.create_account button:hover, 
+.sign_in_account button:hover{
+  cursor: pointer;
+
+}
+
+#forgot_password_button{
+  margin-left: 10px;
+}
+
+
+#update_account_page .create_form{
+margin: 10px auto;
+}
+
+
+
+main:after{
+  clear: both;
+  display: block;
+  content: "";
+}
+
+
+footer{
+  padding: 25px 15px 25px 15px;
+  box-sizing: border-box;
+
+}
+
+footer p{
+  color: #fff;
+  font-weight: lighter;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+footer p a{
+  text-decoration: none;
+  color: #fff;
+}
+
+footer p a:hover{
+  border-bottom-style: solid;
+  border-bottom-color: #ea5f51;
+
+}
+
+
+
+#terms_of_use .create_form,
+#privacy_policy .create_form{
+  width: 100%;
+}
+
+#terms_of_use .create_account,
+#privacy_policy .create_account{
+  width: 85%;
+}
+
+
+#terms_of_use p,
+#privacy_policy p
+{
+  font-size: 10px;
+  text-align: justify;
+}
+
+
+
+
+.breadcrumb li{
+  display: inline-block;
+}
+
+.article_page h2{
+  text-decoration: underline;
+}
+}
+
+
+.article_page{
+
+  margin: 0 auto;
+
+}
+
+.article_page .image_article{
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+
+}
+
+.article_page .latest{
+  width: 70%;
+  border: none;
+  padding: 0 5px 5px 5px;
+}
+
+
+.article_page .latest a, .breadcrumb a, .article_page aside a, .criminal_activity_section a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.article_page .latest a:hover, .breadcrumb a:hover, .article_page aside a:hover, .criminal_activity_section a:hover{
+  text-decoration: underline;
+}
+
+
+.comments_section, .criminal_activity_section{
+  padding: 10px;
+  margin-left: 10px;
+
+}
+
+.comments_section form p, .criminal_activity_section form p{
+  font-size: 14px;
+  margin-top: 10px;
+  padding-bottom: 5px;
+
+ 
+}
+
+.comments_section h3, .criminal_activity_section h3{
+  font-size: 24px;
+  margin-left: -1px;
+}
+
+.comments_section textarea, .criminal_activity_section textarea{
+  resize: vertical;
+  max-height: 100px;
+  font-size: 16px;
+  border: 3px solid #2c539e;
+  color: #000;
+  padding: 5px;
+  width: 99%;
+  background-color: #E5E1E1;
+}
+
+.comments_section textarea:focus{
+ 
+  background-color: #fff;
+  box-shadow: 3px rgba(32,124,202,0.44);
+  border: none;
+}
+
+.comments_section button, .criminal_activity_section button{
+  display: block;
+  background-color: #2c539e;
+  padding: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-family: "open sans";
+  font-weight: bolder;
+  margin-top: 5px;
+ 
+
+}
+
+
+.comments_section dl dt, .criminal_activity_section dl dt{
+   margin-top: 20px;
+   margin-bottom: 10px;
+   font-size: 14px;
+}
+
+.comment_stamp:before{
+  content: url(icon_user.png) "";
+  position: relative;
+  top:5px;
+}
+
+
+
+
+.comments_section dl dd, .criminal_activity_section dl dd{
+   font-size: 14px;
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 890px){
+
+main article{
+
+  width: 49%;
+ margin: 10px 2px;
+}
+
+
+
+.latest .image_article{
+  width: 100%;
+}
+
+.article_page .image_article{
+  width: 70%;
+  margin: 0 auto;
+
+}
+
+
+header nav{
+ 
+
+}
+
+
+header .log_in{
+  position: absolute;
+  right: 0;
+}
+
+
+
+}
+
+
+
+
+}
+
+
+@media screen and (max-width: 820px){
+
+
+
+header .search_box_container{
+  margin-left: 10px;
+}
+
+header .log_in{
+  position: absolute;
+  top: 20px;
+
+
+}
+}
+
+
+@media screen and (max-width: 690px){
+
+
+.article_page td{
+  display: block;
+}
+
+.article_page .latest {
+  width: 100%;
+}
+
+
+header nav ul li{
+ width: 10%;
+
+}
+
+header nav ul li span{
+  visibility: hidden;
+
+}
+
+header nav ul li .nav_image{
+
+  visibility: visible;
+
+}
+
+
+
+}
+
+
+
+@media screen and (max-width: 560px){
+
+header nav ul li #icon_home,
+header nav ul li #icon_business,
+header nav ul li #icon_politics,
+header nav ul li #icon_sports{
+
+  left: 25%;
+ 
+
+}
+
+main article{
+  width: 100%;
+}
+
+
+}
+
+@media screen and (max-width: 520px){
+
+header .log_in ul li{
+  display: block;
+  text-align: right;
+}
+
+header nav ul li .nav_image{
+  
+}
+
+.crime_watch_page .latest figure{
+  width: 50%;
+  float: left;
+}
+header nav ul li #icon_home,
+header nav ul li #icon_business,
+header nav ul li #icon_politics,
+header nav ul li #icon_sports{
+
+  left: 19%;
+}
+
+header nav ul li #icon_crime,
+header nav ul li #icon_education
+{
+  left: 25%;
+}
+
+
+
+
+}
+
+@media screen and (max-width: 400px){
+
+
+header .header_top{
+
+  padding: 10px 5px 10px 10px;
+ 
+}
+
+
+header .search_box_container{
+
+ margin-top: -20px;
+
+
+}
+
+header nav ul li {
+  width: 10%;
+
+}
+
+header nav{
+ 
+
+  padding-left: 10px;
+
+
+}
+
+
+
+header nav ul li {
+  width: 8%;
+
+
+}
+
+header .nav_image{
+    margin-left: -3px;
+
+
+}
+
+
+header input[type="search"]{
+
+  font-size: 16px;
+  width: 265px;
+
+  
+}
+
+header .logo_container img{
+  width: 80%;
+
+}
+
+
+.logo_container p{
+  visibility: hidden;
+}
+
+}
+
+

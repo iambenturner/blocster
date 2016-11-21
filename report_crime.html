@@ -1,0 +1,134 @@
+
+.report_crime_form dt{
+  float: left;
+}
+
+.report_crime_form input[type = "date"], 
+.report_crime_form  select,
+.report_crime_form input[type = "text"],
+.report_crime_form textarea{
+ 
+ font-size: 16px;
+  border: 3px solid #2c539e;
+  color: #000;
+  padding: 5px;
+  background-color: #E5E1E1;
+  font-family: "open sans";
+
+
+
+
+}
+.report_crime_form input[type = "date"]:focus,
+.report_crime_form input[type = "text"]:focus,
+.report_crime_form textarea:focus,
+.report_crime_form  select:focus
+{
+
+   background-color: #fff;
+   box-shadow: 3px rgba(32,124,202,0.44);
+   border: none; 
+
+}
+
+.report_crime_form select{
+  width: 50%;
+
+
+}
+.report_crime_form input[type = "date"]{
+  width: 30%;
+}
+
+
+.report_crime_form input[type = "text"], .report_crime_form textarea{
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<aside class="criminal_activity_section">
+  
+<h3>Criminal Activity Feed</h3>
+
+<form action="" method="" class="report_crime_form">
+<fieldset>
+ 
+<p><a href="register.html">Create a free account</a> or <a href="sign_in.html">sign in</a> to report a crime.</p> 
+
+
+<dl>
+
+<dt><label for="crime_type">Type</label></dt>
+<dd>
+<select name="crime_type" id="crime_type" required="required">
+<option value="business_burglary">Business Burglary</option>
+<option value="gang activity">Gang Activity</option>
+<option value="harassment">Harassment</option>
+<option value="home_burglary">Home Burglary</option>
+<option value="home_burglary">Loitering</option>
+<option value="sexual enticement of child">Sexual Enticement of Minor</option>
+<option value="theft">Theft</option>
+<option value="vandalism">Vandalism</option>
+<option value="vehicle burglary">Vehicle Burglary</option>
+</select>
+</dd>
+
+
+
+
+
+
+<dt>
+<label for="crime_date">Date</label>
+</dt>
+<dd>
+<input type="Date" name="crime_date" id="crime_date" required="required">
+</dd>
+
+
+
+
+<dt>
+<label for="crime_location">Location</label>
+</dt>
+<dd>
+<input type="text" name="crime_location" id="crime_location" minlength="4" maxlength="125" placeholder="neighborhood, intersection or business name" required="required">
+</dd>
+<dt>
+<label for="crime_details">Details</label>
+</dt>
+<dd>
+<textarea id="crime_details" placeholder="enter additional details such as time of day, items stolen, etc"></textarea>
+</dd>
+
+</dl>
+
+<button type="submit" id="post_comment" name="post_comment">Report crime</button>
+</fieldset>
+</form>
+
+
+<dl>  
+<dt class="comment_stamp">Robyn on December 2, 2016 </dt>
+<dd><p>In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content still not being ready.</p></dd>
+
+<dt class="comment_stamp">Robyn on December 2, 2016 </dt>
+<dd><p>In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content still not being ready.</p></dd>
+
+<dt class="comment_stamp">Robyn on December 1, 2016 </dt>
+<dd>In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content still not being ready.</dd>
+</dl>
+
+</aside>
